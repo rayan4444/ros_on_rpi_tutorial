@@ -33,7 +33,7 @@ Especially because the Pi is going to be used inside a robot, there is no real p
 sudo apt update
 sudo apt upgrade
 ```
-> If you have poor internet connection or happen to be in China where some mirrors are really slow, the first upgrade may take some time (HAX office: 2-2.5h)
+> If you have poor internet connection or happen to be in China where some mirrors are really slow, the first upgrade may take some time (HAX office Ethernet: 2.5h)
 
 * Configure ubuntu repositories: You need to allow restricted, universe, and multiverse repositories.
 ```
@@ -67,7 +67,7 @@ What most sources agree on is that choosing the Desktop-Full install on a single
 ```
 sudo apt install ros-melodic-ros-base
 ```
-> > If you have poor internet connection or happen to be in China where some mirrors are really slow, this step can take a long time (HAX office: )
+> > If you have poor internet connection or happen to be in China where some mirrors are really slow, this step can take a long time (HAX office Ethernet: 4.5h)
 
 * Setup your environment 
 ```
