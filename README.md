@@ -110,3 +110,6 @@ If this is your first ROS project, here are some resources to get started
 * [Official ROS tutorials](http://wiki.ros.org/ROS/Tutorials): 
 * [ROS course on youtube by ETH Zurich](https://www.youtube.com/watch?v=0BxVPCInS3M&list=PLE-BQwvVGf8HOvwXPgtDfWoxd4Cc6ghiP)
 * [A gentle introduction to ROS textbook (chinese version available too)](https://www.cse.sc.edu/~jokane/agitr/) 
+* [ROS for Beginners: Basics, Motion, and OpenCV](https://www.udemy.com/course/ros-essentials/). The author has made a couple of classes from this course freely available on youtube [here](https://www.youtube.com/playlist?list=PLSzYQGCXRW1H8R2Bok_K8wcsE12_49alQ)
+* The Construct is another good learning resource, they give you an online ROS environment(complete with the Gazebo 3D simulator) all set up and ready to go. [link](https://www.theconstructsim.com/)
+
