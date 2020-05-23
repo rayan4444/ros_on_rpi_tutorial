@@ -90,6 +90,39 @@ sudo rosdep init
 rosdep update
 ```
 
+Some bugs I encountered:
+```
+sudo rosdep init
+ERROR: cannot dowload default sources list from: https://raw.githubusercontent.com/ros/rosdistro/master/rosdep/sources.list.d/20-default.list 
+Website may be down 
+```
+* Step 1: make sure your system date and time are correct. you may consider installing NTP to sync up your pi with the internet. 
+```
+sudo apt install ntp
+```
+Give ```sudo rosdep init``` another try afterwards. If it doesn't work go to step 2
+
+* Step 2: fix ca-certificates 
+```
+sudo apt-get install ca-certificates
+sudo c_rehash /etc/ssl/certs
+sudo -E rosdep init
+```
+If it doesn't work try step 3
+* Step 3: add raw.github user contents on your host list
+```
+sudo gedit /etc/hosts
+OR
+sudo nano /etc/hosts
+```
+Then add the following line under the line at the bottom of the file
+```
+151.101.84.133  raw.githubusercontent.com
+```
+Run ```sudo rosdep init``` or ```sudo -E rosdep init``` again. This fixed the issue for me. 
+
+Read more [here](https://blog.csdn.net/u013468614/article/details/102917569)
+
 ### Tutorial links:
 * [From ROS](http://wiki.ros.org/melodic/Installation/Ubuntu)
 * [Other from ROS](http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Melodic%20on%20the%20Raspberry%20Pi)
