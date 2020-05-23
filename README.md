@@ -23,7 +23,8 @@ I chose to go ahead with Ubuntu server/core because we might use a Raspberry pi 
 #### Desktop or no Desktop?
 
 Especially because the Pi is going to be used inside a robot, there is no real point in installing a desktop. If you chose to install a desktop anyways - the default Unity or more lightweight options like lubuntu, xubuntu , etc. - you can follow the steps in any of the methods above.
-> Note: I tried installing lubuntu but it didn't work on my Raspberry Pi  
+
+> Note: there is no support for lubuntu for 18.04 on RPi ([as of the time of writing](https://askubuntu.com/questions/1114938/unable-to-locate-package-lubuntu-desktop)). I installed ubuntu mate desktop instead because it installed faster ``` sudo apt install ubuntu-mate-desktop``` (HAX office Ethernet: 4.5h)
 
 ### Install ROS Melodic
 
@@ -146,3 +147,6 @@ If this is your first ROS project, here are some resources to get started
 * [ROS for Beginners: Basics, Motion, and OpenCV](https://www.udemy.com/course/ros-essentials/). The author has made a couple of classes from this course freely available on youtube [here](https://www.youtube.com/playlist?list=PLSzYQGCXRW1H8R2Bok_K8wcsE12_49alQ)
 * The Construct is another good learning resource, they give you an online ROS environment(complete with the Gazebo 3D simulator) all set up and ready to go. [link](https://www.theconstructsim.com/)
 
+
+## Other interesting resources
+* [Building ROS melodic for Python3 support](https://www.miguelalonsojr.com/blog/robotics/ros/python3/2019/08/20/ros-melodic-python-3-build.html)
