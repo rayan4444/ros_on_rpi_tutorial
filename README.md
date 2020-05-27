@@ -124,6 +124,8 @@ Run ```sudo rosdep init``` or ```sudo -E rosdep init``` again. This fixed the is
 
 Read more [here](https://blog.csdn.net/u013468614/article/details/102917569)
 
+> Deeper investigation shows that some parts of github are blocked in China and might have caused this issue. 
+
 ### Tutorial links:
 * [From ROS](http://wiki.ros.org/melodic/Installation/Ubuntu)
 * [Other from ROS](http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Melodic%20on%20the%20Raspberry%20Pi)
